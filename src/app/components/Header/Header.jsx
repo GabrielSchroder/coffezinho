@@ -7,7 +7,7 @@ function Header() {
       <div className={styles.bannerContent}>
         {/* Conteúdo do banner, como texto ou outros elementos */}
         <h1>The Coffezinho</h1>
-        <p>Open from 6am to 5pm</p>
+        <p>Open from 6am to 17pm</p>
         <p>15 Adr street, 5015</p>
       </div>
     </header>
