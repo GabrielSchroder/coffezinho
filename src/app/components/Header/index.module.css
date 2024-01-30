@@ -1,0 +1,56 @@
+/* Estilo base para todos os tamanhos de tela */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../../../../public/banner.jpg") center/cover;
+  opacity: 0.4; /* ou qualquer valor de opacidade desejado */
+}
+
+.bannerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.bannerContent h1{
+  font-weight: bold;
+  font-size: 70px;
+}
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+  .banner {
+    height: 250px; /* Ajuste conforme necessário para dispositivos móveis */
+  }
+  .bannerContent h1 {
+    font-size: 40px;
+  }
+
+}
+
+/* Media queries para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner {
+    height: 350px; /* Ajuste conforme necessário para tablets */
+  }
+}
+
+/* Media queries para desktops */
+@media only screen and (min-width: 1024px) {
+  .banner {
+    height: 550px; /* Ajuste conforme necessário para desktops */
+  }
+
+}
